@@ -8,7 +8,7 @@ public class OpenBrowser {
 
     public static void main(String[] args) {
 // System Property for Chrome Driver
-        System.setProperty("webdriver.chrome.driver", "src\\chromedriver_win32\\chromedriver.exe");
+
 
 
         WebDriver driver=new ChromeDriver();
