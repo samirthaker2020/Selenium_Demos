@@ -1,6 +1,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 
 public class OpenBrowserInput {
@@ -10,8 +11,8 @@ public class OpenBrowserInput {
         //1) Open Web Browser
 
         //Chrome browser
-        System.setProperty("webdriver.chrome.driver", "src/chromedriver_win32/chromedriver.exe");
-        driver=new ChromeDriver(); //ChromeDriver driver=new ChromeDriver(); //Launch the chrome browser
+      //  System.setProperty("webdriver.chrome.driver", "src/chromedriver_win32/chromedriver.exe");
+      //  driver=new ChromeDriver(); //ChromeDriver driver=new ChromeDriver(); //Launch the chrome browser
 
 
         //Firefox browser
@@ -19,8 +20,8 @@ public class OpenBrowserInput {
         // WebDriver driver=new FirefoxDriver(); //Launch the firefox browser
 
         //IE
-        // System.setProperty("webdriver.ie.driver", "src/chromedriver_win32/IEDriverServer.exe");
-        //WebDriver driver=new InternetExplorerDriver();
+         System.setProperty("webdriver.ie.driver", "src/chromedriver_win32/IEDriverServer.exe");
+        WebDriver driver=new InternetExplorerDriver();
 
 
         //2) Open URL  https://opensource-demo.orangehrmlive.com/
